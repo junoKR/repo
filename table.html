@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: rgb(191, 238, 222);
+    }
+    li {
+      list-style: none;
+    }
+    form {
+      position: relative;
+      width: 700px;
+      height: 850px;
+      margin: 100px auto;
+      padding: 50px 20px;
+      background-color: aliceblue;
+      border-radius: 10px;
+      box-shadow: 2px 2px 2px 2px rgb(157, 157, 157);
+    }
+    .id > p {
+      margin-top: 10px;
+    }
+    .id input {
+      border-radius: 5px;
+      border: 1px solid rgb(127, 144, 255);
+      width: 600px;
+      height: 40px;
+      margin-top: 10px;
+    }
+    .id input:nth-child(10) {
+      height: 200px;
+    }
+    .id select {
+      margin-top: 10px;
+      width: 600px;
+      height: 40px;
+      border: 1px solid rgb(127, 144, 255);
+      padding: 10px;
+      border-radius: 5px;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+    .reply {
+      margin-top: 15px;
+    }
+    .button {
+      position: absolute;
+      bottom: 40px;
+      right: 20px;
+    }
+    .button button {
+      width: 80px;
+      height: 35px;
+      background-color: aliceblue;
+      border-radius: 5px;
+    }
+    .button .Submit {
+      border: none;
+      background-color: rgb(23, 74, 74);
+      color: white;
+    }
+  </style>
+  <body>
+    <form>
+      <table>
+        <div class="id">
+          <h1>How can we help you?</h1>
+          <p>Your Name</p>
+          <input type="text" /><br />
+          <p>Your E-Mail Address</p>
+          <input type="email" />
+          <p>Your Phone Number</p>
+          <input type="text" />
+          <p>Your Message</p>
+          <input type="text" name="" id="bigBox" />
+          <p>
+            How did you find us?<br />
+            <select name="" id="choice">
+              <br />
+              <option>Web Search</option>
+              <option>Word of Mouth</option>
+              <option>Other</option>
+            </select>
+          </p>
+
+          <h2>How shilud we reply?</h2>
+        </div>
+        <div class="reply">
+          <input type="radio" name="" id="" /> Call me
+          <br />
+          <input type="radio" name="" id="" /> Send me an email
+          <br />
+          <input type="radio" name="" id="" /> Don't reply
+          <br />
+          <br />
+          <input type="radio" name="" id="" /> Accept Tems
+          <br />
+        </div>
+        <div class="button">
+          <button class="Clear">Clear</button>
+          <button class="Submit">Submit</button>
+        </div>
+      </table>
+    </form>
+  </body>
+</html>
